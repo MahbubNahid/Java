@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class Nahid{
+
+    public static void main(String[] args) {
+        
+        //Step 1: Scan the string
+        
+        Scanner input = new Scanner(System.in);
+        String random;
+        System.out.println("Enter your string\n");
+        random = input.nextLine();
+        System.out.println("String is = "+random);
+        
+        // //Extra step: For the problem of upper case
+        
+        // String lowerCaseString = random.toLowerCase();
+        
+        // //Extra step 2: Revers string
+        // String reversedString = new StringBuilder(lowerCaseString).reverse().toString();
+        // System.out.println("Reversed string = "+reversedString);
+        
+        // //Extra Step 3: Comper the Strings
+        
+        // if(lowerCaseString.equals(reversedString)) {
+        //     System.out.println("String is palindrome");
+        // }
+        // else{
+        //     System.out.println("String is not palindrome");
+        // }
+        
+        
+        //Step 2: Reverse the string
+        
+        String reversedString = new StringBuilder(random).reverse().toString();
+        System.out.println("Reversed string = "+reversedString);
+        
+        //Step 3: Comper the Strings
+        
+        if(random.equals(reversedString)) {
+            System.out.println("String is palindrome");
+        }
+        else{
+            System.out.println("String is not palindrome");
+        }
+
+    }
+}
